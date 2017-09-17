@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'hallo/index'
 
-  get 'hallo/create'
+  post 'hallo/create'
 
   get 'hallo/update'
 
