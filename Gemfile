@@ -5,9 +5,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.7'
 gem 'jquery-ui-rails'
 gem 'hallo-rails'
+gem 'slim'
+gem 'pg', group: :production
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', group: :development
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
