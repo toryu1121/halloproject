@@ -1,0 +1,7 @@
+<h1>halloproject_List</h1>
+<% @hallo_list.each do |hallo| %>
+    <fieldset>
+        <legend><%= hallo.created_at %></legend>
+        <p><%== hallo.hallo_text %></p>
+    </fieldset>
+<% end %>

@@ -5,6 +5,7 @@ class HalloController < ApplicationController
 
   def create
     @hallo = Halloproject.new(params.permit(:hallo_text))
+    @hallo_list = Halloproject.order("created_at DESC").limit(10)
     
     respond_to do |format|
       if @hallo.save
