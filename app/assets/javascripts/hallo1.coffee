@@ -27,12 +27,18 @@ class CoffeeStory extends CoffeeChap
             alert @editext
             alert @edihtml
             $.post "hallo/create", hallo_text: @edihtml
+    
+    story8: ->
+        $("#btn").click =>
+            @edihtml = $('#text').html()
+            $.post "hallo/create", hallo_text: @edihtml        
 
 
 class CoffeeAct extends CoffeeStory
     constructor: ->
         super
         this.story6()
-        this.story7()
+        # this.story7()
+        this.story8()
 $ ->
     new CoffeeAct
